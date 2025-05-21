@@ -1,0 +1,63 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+:root {
+    --font: "Jersey+10";
+    --background-color: #140228;
+    --card-color: #322763;
+    --primary-color: #f9aa48;
+    --secondary-color: #fef6dd;
+}
+
+// Header
+#header-full {
+    padding: 10px;
+    font-family: var(--font);
+    ion-title {
+        font-size: 40px;
+    }
+    --background: #271963;
+    color: white;
+    #header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        #header-links {
+            display: flex;
+            gap: 20px;
+            ion-button {
+                --background: none;
+                --box-shadow: none;
+                border-bottom: #b663f9 2px solid;
+                font-family: var(--font);
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// Content
+ion-content {
+    --background: var(--background-color);
+}

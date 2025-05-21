@@ -1,0 +1,35 @@
+<ion-content>
+  <div id="login-page">
+    <ion-card id="login-left">
+      <h2>Lorem</h2>
+      <ion-card-title>Bem-vindo!</ion-card-title>
+      <ion-card-subtitle>Invidunt diam elitr no ipsum vel sadipscing elit clita liber invidunt sanctus labore vero consetetur lorem minim tempor.</ion-card-subtitle>
+      <ion-card-content>
+        <ion-item lines="none">
+          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+          <ion-input placeholder="Email" type="text" autocomplete="false" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon slot="start" name="mail-outline"></ion-icon>
+          <ion-input placeholder="Senha" type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-button expand="full" (click)="Login()">Login</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card id="login-right">
+      <ion-card-title>Revolucionando a maneira</ion-card-title>
+      <ion-card-content>
+        <div class="glass">
+          <p>Invidunt diam elitr no ipsum vel sadipscing elit clita liber invidunt sanctus labore vero consetetur lorem minim tempor.</p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card id="login-down">
+      <ion-card-title></ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-content></ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
