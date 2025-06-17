@@ -1,4 +1,5 @@
 .card-container {
+    animation: fadeIn 2s;
     display: flex;
     background-color: #f2e9d3;
     height: 200px;
@@ -39,6 +40,7 @@
     animation: textShadow 4s infinite;
 }
 .mini-container {
+    animation: fadeIn 2s;
     padding: 20px;
     border-radius: 30px;
     margin: 10px;
