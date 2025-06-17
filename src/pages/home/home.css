@@ -5,6 +5,8 @@
     border-radius: 30px;
     overflow: hidden;
     margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .card-image img {
     width: 200px;
@@ -28,4 +30,52 @@
     margin-top: 10px;
     font-size: 20px;
     padding: 5px;
+}
+
+/* MINI CARDS */
+.mini-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    animation: textShadow 4s infinite;
+}
+.mini-container {
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    margin-top: 0;
+    height: 240px;
+    background-color: #6d738d;
+}
+.mini-header h2 {
+    border-bottom: solid 5px #3f3645;
+    margin: 0;
+    padding: 5px;
+    font-size: 30px;
+    color: #f2e9d3;
+}
+.mini-content {
+    text-align: justify;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.mini-content p {
+    color: #e8b85c;
+}
+.mini-content a {
+    color: white;
+}
+
+/* BUTTONS */
+.pixel {
+    color: #3f3645;
+    text-transform: uppercase;
+    background-color: #94b5a3;
+    padding: 10px;
+    width: 200px;
+    font-size: 25px;
+    font-family: "VT323", monospace;
+    border: 0;
+    box-shadow: 0px 5px black, 0px -5px black, 5px 0px black, -5px 0px black, 0px 10px #00000038, 5px 5px #00000038, -5px 5px #00000038, inset 0px 5px #ffffff36 ;
+    cursor: pointer;
 }
