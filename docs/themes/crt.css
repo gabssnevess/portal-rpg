@@ -33,6 +33,7 @@ html {
 body {
     background: #111;
     margin: 0;
+	padding: 0;
 }
 a {
     outline: none;
@@ -40,23 +41,21 @@ a {
 
 /***********? PARTS OF THE SCREEN ?*************/
 #screen {
+	height: 100vh;
     position: relative;
     border: 30px solid transparent;
     border-image-source: url(../assets/img/bezel.png);
     border-image-slice: 30 fill;
     border-image-outset: 0;
-    height: 100vh;
-	overflow: hidden;
 }
 #crt {
-    min-width: 80ch;
-    height: 100%;
-    font-size: max(1rem, 2.2vmin);
+	height: 100%;
     position: relative;
     background: var(--bg);
     background-image: radial-gradient(ellipse, var(--bg) 0%, var(--off) 90%);
     animation: on 2s linear;
     transition: all 0.5s;
+	overflow: auto;
 }
 #crt:after {
     content: " ";
@@ -121,9 +120,10 @@ a {
 	);
 	opacity: 0.1;
 	position: absolute;
-	bottom: 100%;
+	top: 0;
 	pointer-events: none;
 	animation: scanline 10s linear infinite;
+	will-change: transform;
 }
 
 /***********? ANIMATIONS ?*************/

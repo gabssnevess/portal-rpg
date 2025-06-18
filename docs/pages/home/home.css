@@ -2,7 +2,7 @@
     animation: fadeIn 2s;
     display: flex;
     background-color: #f2e9d3;
-    height: 200px;
+    height: auto;
     border-radius: 30px;
     overflow: hidden;
     margin: 10px;
@@ -10,7 +10,15 @@
     margin-bottom: 0;
 }
 .card-image img {
-    width: 200px;
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+}
+@media (max-width: 768px) {
+  .card-image {
+    display: none;
+  }
 }
 .card-content {
     padding: 10px;
@@ -36,8 +44,9 @@
 /* MINI CARDS */
 .mini-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     animation: textShadow 4s infinite;
+    overflow: hidden;
 }
 .mini-container {
     animation: fadeIn 2s;
@@ -45,7 +54,7 @@
     border-radius: 30px;
     margin: 10px;
     margin-top: 0;
-    height: 240px;
+    min-height: 240px;
     background-color: #6d738d;
 }
 .mini-header h2 {
