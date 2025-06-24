@@ -91,10 +91,14 @@
     border: none;
     border-radius: 30px;
 }
+.pixel > a {
+    text-decoration: none;
+}
 .pixel:hover {
     color: #3f3645;
     background-color: #f2e9d3;
     transition: all 1s;
+    a {color: #3f3645;}
 }
 .pixel:not(:hover) {
     transition: all 1s;

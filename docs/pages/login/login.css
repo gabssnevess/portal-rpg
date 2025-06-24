@@ -1,0 +1,49 @@
+.login-card {
+    animation: fadeIn 2s;
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-content {
+    padding: 40px;
+    background-color: #f2e9d3;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-content button{
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-family: "VT323", monospace;
+    font-size: 30px;
+    background-color: #d98d49;
+    color: #f2e9d3;
+    text-transform: uppercase;
+}
+.login-input {
+    color: #3f3645;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.login-input span {
+    margin-bottom: 5px;
+}
+.login-input input {
+    font-family: "VT323", monospace;
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #95827f;
+}
